@@ -117,7 +117,6 @@ namespace plugin_dotnet
             var result = JsonSerializer.Serialize(targets.Select(a => Converter.ConvertToBrowseResult(a, nsTable)).ToArray());
             response.Code = 200;
             response.Body = ByteString.CopyFrom(result, Encoding.ASCII);
-            _log.LogDebug("We got a result from browse ref targets => {0}", result);
 
             return response;
         }
@@ -223,7 +222,6 @@ namespace plugin_dotnet
             var result = JsonSerializer.Serialize(Converter.ConvertToBrowseResult(references[0], nsTable));
             response.Code = 200;
             response.Body = ByteString.CopyFrom(result, Encoding.ASCII);
-            _log.LogDebug("We got a result from browse => {0}", result);
             return response;
         }
 
@@ -256,7 +254,6 @@ namespace plugin_dotnet
             var result = JsonSerializer.Serialize(ordered);
             response.Code = 200;
             response.Body = ByteString.CopyFrom(result, Encoding.ASCII);
-            _log.LogDebug("We got a result from browse => {0}", result);
             return response;
         }
 
@@ -289,7 +286,6 @@ namespace plugin_dotnet
             var result = JsonSerializer.Serialize(browseResult.Select(a => Converter.ConvertToBrowseResult(a, nsTable)).ToArray());
             response.Code = 200;
             response.Body = ByteString.CopyFrom(result, Encoding.ASCII);
-            _log.LogDebug("We got a result from browse => {0}", result);
             return response;
         }
 
@@ -302,7 +298,6 @@ namespace plugin_dotnet
             var result = JsonSerializer.Serialize(browseResult.Select(a => Converter.ConvertToBrowseResult(a, nsTable)).ToArray());
             response.Code = 200;
             response.Body = ByteString.CopyFrom(result, Encoding.ASCII);
-            _log.LogDebug("We got a result from browse => {0}", result);
             return response;
         }
 
@@ -342,7 +337,6 @@ namespace plugin_dotnet
             var result = JsonSerializer.Serialize(browseResult.Select(a => Converter.ConvertToBrowseResult(a, nsTable)).OrderBy(refdesc => refdesc.displayName).ToArray());
             response.Code = 200;
             response.Body = ByteString.CopyFrom(result, Encoding.ASCII);
-            _log.LogDebug("We got a result from browse => {0}", result);
             return response;
         }
 
