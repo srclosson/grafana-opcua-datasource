@@ -30,11 +30,11 @@
     "links": [
       {
         "name": "Website",
-        "url": "https://github.com/srclosson/opcua-datasource"
+        "url": "https://github.com/grafana/opcua-datasource"
       },
       {
         "name": "License",
-        "url": "https://github.com/srclosson/opcua-datasource/blob/master/LICENSE"
+        "url": "https://github.com/grafana/opcua-datasource/blob/master/LICENSE"
       }
     ],
     "screenshots": [],
@@ -42,7 +42,7 @@
     "updated": "%TODAY%"
   },
   "dependencies": {
-    "grafanaDependency": "6.3.x",
+    "grafanaDependency": "7.4.x",
     "plugins": []
   }
 }
